@@ -33,6 +33,8 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
+      env:
+        REGION: us-west-2
       run: terraform plan
 
       # On push to main, build or change infrastructure according to Terraform configuration files
