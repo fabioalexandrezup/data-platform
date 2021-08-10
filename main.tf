@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "squad_platform_tmp" {
   bucket = "orange-datalake-squad-platform"
-  acl    = "public-read-write"
+  acl    = "private"
   tags = {
     Name        = "squad-platform"
     Environment = "Dev"
